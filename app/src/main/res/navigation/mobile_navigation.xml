@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_tarefas">
+
+    <fragment
+        android:id="@+id/nav_tarefas"
+        android:name="Daniel.personal.todoList.ui.tarefas.TarefasFragment"
+        android:label="@string/menu_tarefas"
+        tools:layout="@layout/fragment_tarefas" />
+
+    <fragment
+        android:id="@+id/nav_cadernos"
+        android:name="Daniel.personal.todoList.ui.gallery.GalleryFragment"
+        android:label="@string/menu_cadernos"
+        tools:layout="@layout/fragment_cadernos" />
+
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="Daniel.personal.todoList.ui.sobre.SobreFragment"
+        android:label="@string/menu_sobre"
+        tools:layout="@layout/fragment_sobre"/>
+
+</navigation>
